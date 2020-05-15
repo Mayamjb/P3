@@ -17,8 +17,8 @@ winning.png
 MacGyver.png
 bounderies.png
 
-P3_01_data.py
-P3_02_char_class.py
-P3_03_trame_class.py
-P3_04_maze_class.py
-P3_05_controler.py
+data.py
+char_class.py
+trame_class.py
+maze_class.py
+controler.py
