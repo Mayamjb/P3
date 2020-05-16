@@ -80,9 +80,9 @@ class Mapp(Character):
             Takes a pygame event as a parameter to detect keyboard entries.
         """
         # creating a black rectangle to hide player movement
-        self._Mapp__create_rectangle((30, 30))
+        self.__create_rectangle((30, 30))
         # actionning player move
-        self._Mapp__movement_definition(event_key)
+        self.__movement_definition(event_key)
         # converting list coordinate to pixels
         self.x_screen = self.macgyver.x * 30
         self.y_screen = self.macgyver.y * 30

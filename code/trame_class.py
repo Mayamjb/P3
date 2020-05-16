@@ -5,15 +5,15 @@ class Trame:
 
     def __init__(self, txt_file):
         self.txt_file = txt_file
-        self.trame = self._Trame__run("H", "K", "L")
+        self.trame = self.__run("H", "K", "L")
 
     def __run(self, obj1, obj2, obj3):
         """ Fuction that places the 3 objects in the list.
             The three parameters represent the objects to place
             The function returns the list with three objects placed
         """
-        var1 = self._Trame__get_map_from_txt(self.txt_file)
-        var2 = self._Trame__get_mapp_with_objects(obj1, obj2, obj3, var1)
+        var1 = self.__get_map_from_txt(self.txt_file)
+        var2 = self.__get_mapp_with_objects(obj1, obj2, obj3, var1)
         return var2
 
     def __get_map_from_txt(self, map_txt):
@@ -50,7 +50,7 @@ class Trame:
 
     def __get_mapp_with_objects(self, obj1, obj2, obj3, trame):
         # placing objects on the map one by one. returning last map
-        self._Trame__place_object_randomly(obj1, trame)
-        self._Trame__place_object_randomly(obj2, trame)
-        mapp3 = self._Trame__place_object_randomly(obj3, trame)
+        self.__place_object_randomly(obj1, trame)
+        self.__place_object_randomly(obj2, trame)
+        mapp3 = self.__place_object_randomly(obj3, trame)
         return mapp3

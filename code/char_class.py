@@ -35,6 +35,6 @@ class Character():
             It takes the incrementation needed for each coordinate
             to allow movement.
         """
-        if self._Character__check_collision(self.x + add_x, self.y + add_y):
+        if self.__check_collision(self.x + add_x, self.y + add_y):
             self.x += add_x
             self.y += add_y
